@@ -1,0 +1,41 @@
+
+--- 2025-05-14T03:56:50.527Z debug
+🪵  Writing logs to "/home/ubuntu/.config/.wrangler/logs/wrangler-2025-05-14_03-56-50_391.log"
+---
+
+--- 2025-05-14T03:56:50.527Z debug
+Metrics dispatcher: Posting data {"deviceId":"f25e1b67-b8c8-441b-aae7-d452bf3e4ea4","event":"wrangler command started","timestamp":1747195010527,"properties":{"amplitude_session_id":1747195010524,"amplitude_event_id":0,"wranglerVersion":"4.14.4","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Tue Sep  3 09:03:50 UTC 2024","nodeVersion":22,"isFirstUsage":true,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":true,"argsUsed":["file","local"],"argsCombination":"file, local","command":"wrangler d1 execute","args":{"local":true,"file":"<REDACTED>","xJsonConfig":true,"j":true,"json":false,"preview":false,"database":"<REDACTED>"}}}
+---
+
+--- 2025-05-14T03:56:50.536Z debug
+.env file not found at ".env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-05-14T03:56:50.833Z log
+
+ ⛅️ wrangler 4.14.4
+-------------------
+
+---
+
+--- 2025-05-14T03:56:50.841Z log
+
+---
+
+--- 2025-05-14T03:56:50.916Z error
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCouldn't find a D1 DB with the name or binding 'DB' in your wrangler.toml file.[0m
+
+
+---
+
+--- 2025-05-14T03:56:50.916Z debug
+Error: Couldn't find a D1 DB with the name or binding 'DB' in your wrangler.toml file.
+    at executeLocally (/home/ubuntu/.nvm/versions/node/v22.13.0/lib/node_modules/wrangler/wrangler-dist/cli.js:116298:11)
+    at executeSql (/home/ubuntu/.nvm/versions/node/v22.13.0/lib/node_modules/wrangler/wrangler-dist/cli.js:116278:14)
+    at async Object.handler (/home/ubuntu/.nvm/versions/node/v22.13.0/lib/node_modules/wrangler/wrangler-dist/cli.js:116187:24)
+    at async Object.handler (/home/ubuntu/.nvm/versions/node/v22.13.0/lib/node_modules/wrangler/wrangler-dist/cli.js:115878:7)
+---
+
+--- 2025-05-14T03:56:50.917Z debug
+Metrics dispatcher: Posting data {"deviceId":"f25e1b67-b8c8-441b-aae7-d452bf3e4ea4","event":"wrangler command errored","timestamp":1747195010917,"properties":{"amplitude_session_id":1747195010524,"amplitude_event_id":1,"wranglerVersion":"4.14.4","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Tue Sep  3 09:03:50 UTC 2024","nodeVersion":22,"isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":true,"argsUsed":["file","local"],"argsCombination":"file, local","command":"wrangler d1 execute","args":{"local":true,"file":"<REDACTED>","xJsonConfig":true,"j":true,"json":false,"preview":false,"database":"<REDACTED>"},"durationMs":416,"durationSeconds":0.416,"durationMinutes":0.006933333333333333,"errorType":"UserError"}}
+---
